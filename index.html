@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flowbase — Build better products</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, sans-serif; color: #111827; }
+    nav { background: #fff; border-bottom: 1px solid #e5e7eb; padding: 0 40px; height: 60px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+    .logo { font-weight: 700; font-size: 20px; }
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a { color: #6b7280; text-decoration: none; font-size: 14px; }
+    .btn-primary { background: #111827; color: #fff; text-decoration: none; font-size: 14px; padding: 8px 20px; border-radius: 8px; font-weight: 500; }
+    .banner { background: #052e16; border-bottom: 1px solid #14532d; padding: 10px 40px; display: flex; align-items: center; justify-content: center; gap: 12px; }
+    .banner-dot { width: 8px; height: 8px; background: #4ade80; border-radius: 50%; }
+    .banner span { color: #86efac; font-size: 13px; font-weight: 500; }
+    .banner a { color: #4ade80; font-size: 13px; font-weight: 600; }
+    .hero { padding: 80px 40px; text-align: center; max-width: 800px; margin: 0 auto; }
+    .badge { display: inline-block; background: #f0fdf4; color: #15803d; font-size: 13px; font-weight: 500; padding: 6px 14px; border-radius: 20px; margin-bottom: 24px; border: 1px solid #bbf7d0; }
+    h1 { font-size: 52px; font-weight: 800; line-height: 1.15; margin-bottom: 24px; letter-spacing: -1px; }
+    .hero p { font-size: 20px; color: #6b7280; margin-bottom: 40px; line-height: 1.6; }
+    .hero-btns { display: flex; gap: 12px; justify-content: center; }
+    .btn-hero { background: #111827; color: #fff; text-decoration: none; font-size: 16px; padding: 14px 32px; border-radius: 10px; font-weight: 600; }
+    .btn-hero-outline { background: #fff; color: #111827; text-decoration: none; font-size: 16px; padding: 14px 32px; border-radius: 10px; font-weight: 600; border: 1px solid #e5e7eb; }
+    .features { background: #f9fafb; padding: 80px 40px; }
+    .features h2 { font-size: 36px; font-weight: 700; text-align: center; margin-bottom: 12px; }
+    .features .sub { color: #6b7280; text-align: center; font-size: 18px; margin-bottom: 56px; }
+    .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1100px; margin: 0 auto; }
+    .card { background: #fff; border-radius: 12px; padding: 28px; border: 1px solid #e5e7eb; }
+    .card-icon { font-size: 28px; margin-bottom: 12px; }
+    .card h3 { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+    .card p { color: #6b7280; font-size: 14px; line-height: 1.6; }
+    .pricing { padding: 80px 40px; max-width: 1100px; margin: 0 auto; }
+    .pricing h2 { font-size: 36px; font-weight: 700; text-align: center; margin-bottom: 12px; }
+    .pricing .sub { color: #6b7280; text-align: center; font-size: 18px; margin-bottom: 56px; }
+    .plan { border-radius: 12px; padding: 32px; border: 1px solid #e5e7eb; background: #fff; }
+    .plan.highlight { background: #111827; border: none; }
+    .plan h3 { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+    .plan .price { font-size: 40px; font-weight: 800; margin-bottom: 8px; }
+    .plan .desc { font-size: 14px; margin-bottom: 24px; }
+    .plan ul { list-style: none; margin-bottom: 28px; }
+    .plan ul li { font-size: 14px; padding: 6px 0; display: flex; align-items: center; gap: 8px; }
+    .plan ul li::before { content: '✓'; color: #10b981; font-weight: 700; }
+    .btn-plan { display: block; text-align: center; background: #111827; color: #fff; text-decoration: none; font-size: 15px; padding: 12px; border-radius: 8px; font-weight: 600; }
+    .btn-plan.light { background: #fff; color: #111827; }
+    .cta { padding: 80px 40px; text-align: center; max-width: 700px; margin: 0 auto; }
+    .cta h2 { font-size: 40px; font-weight: 800; margin-bottom: 16px; }
+    .cta p { color: #6b7280; font-size: 18px; margin-bottom: 36px; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Flowbase</div>
+    <div class="nav-links">
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Docs</a>
+    </div>
+    <a href="#" class="btn-primary">Start free trial</a>
+  </nav>
+
+  <div class="banner">
+    <div class="banner-dot"></div>
+    <span>Exito is tracking this page — move your mouse off screen to see it in action</span>
+    <a href="https://getexito.com/dashboard">View live dashboard</a>
+  </div>
+
+  <div class="hero">
+    <div class="badge">Trusted by 2,000+ product teams</div>
+    <h1>Build better products<br>with less effort</h1>
+    <p>Flowbase helps product teams manage roadmaps, track features, and ship faster. Everything in one place.</p>
+    <div class="hero-btns">
+      <a href="#pricing" class="btn-hero">Start free trial</a>
+      <a href="#features" class="btn-hero-outline">See how it works</a>
+    </div>
+  </div>
+
+  <div class="features" id="features">
+    <h2>Everything your team needs</h2>
+    <p class="sub">Powerful features that grow with your team</p>
+    <div class="grid3">
+      <div class="card"><div class="card-icon">🗺️</div><h3>Roadmap Planning</h3><p>Visualise your product roadmap and align your team around priorities that matter most.</p></div>
+      <div class="card"><div class="card-icon">✅</div><h3>Feature Tracking</h3><p>Track every feature from idea to launch. Never lose sight of what is shipping and when.</p></div>
+      <div class="card"><div class="card-icon">💬</div><h3>Customer Feedback</h3><p>Collect, organise and prioritise customer requests directly inside your workflow.</p></div>
+      <div class="card"><div class="card-icon">👥</div><h3>Team Collaboration</h3><p>Comments, mentions, and real-time updates keep your entire product team aligned.</p></div>
+      <div class="card"><div class="card-icon">📊</div><h3>Analytics Dashboard</h3><p>Understand feature adoption and user behaviour with built-in analytics and reporting.</p></div>
+      <div class="card"><div class="card-icon">🔗</div><h3>Integrations</h3><p>Connect with Jira, Slack, GitHub, and 50+ other tools your team already uses.</p></div>
+    </div>
+  </div>
+
+  <div class="pricing" id="pricing">
+    <h2>Simple, transparent pricing</h2>
+    <p class="sub">No hidden fees. Cancel anytime.</p>
+    <div class="grid3">
+      <div class="plan">
+        <h3>Starter</h3>
+        <div class="price">$29<span style="font-size:16px;font-weight:400;color:#6b7280">/mo</span></div>
+        <p class="desc" style="color:#6b7280">Perfect for small teams</p>
+        <ul>
+          <li>Up to 5 users</li>
+          <li>10 projects</li>
+          <li>Basic analytics</li>
+          <li>Email support</li>
+        </ul>
+        <a href="#" class="btn-plan">Get started</a>
+      </div>
+      <div class="plan highlight">
+        <h3 style="color:#fff">Pro</h3>
+        <div class="price" style="color:#fff">$79<span style="font-size:16px;font-weight:400;color:#9ca3af">/mo</span></div>
+        <p class="desc" style="color:#9ca3af">For growing teams</p>
+        <ul style="color:#d1d5db">
+          <li>Up to 25 users</li>
+          <li>Unlimited projects</li>
+          <li>Advanced analytics</li>
+          <li>Priority support</li>
+          <li>Custom integrations</li>
+        </ul>
+        <a href="#" class="btn-plan light">Get started</a>
+      </div>
+      <div class="plan">
+        <h3>Enterprise</h3>
+        <div class="price">$199<span style="font-size:16px;font-weight:400;color:#6b7280">/mo</span></div>
+        <p class="desc" style="color:#6b7280">For large teams</p>
+        <ul>
+          <li>Unlimited users</li>
+          <li>Unlimited projects</li>
+          <li>Custom analytics</li>
+          <li>Dedicated support</li>
+          <li>SSO and security</li>
+        </ul>
+        <a href="#" class="btn-plan">Get started</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h2>Ready to ship faster?</h2>
+    <p>Join 2,000+ product teams already using Flowbase.</p>
+    <a href="#" class="btn-hero">Start your free trial</a>
+  </div>
+
+  <script src="https://exito-nine.vercel.app/tracker.js" data-site-id="carrd-test"></script>
+
+</body>
+</html>
